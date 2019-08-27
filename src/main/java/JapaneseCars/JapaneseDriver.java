@@ -2,24 +2,27 @@ package JapaneseCars;
 
 public class JapaneseDriver {
 
+	protected static String model;
+
 	public static void main(String[] args) {
 		
-		new Honda("Civic", "black", 4, true);
-		new Honda("Accord", "black", 4, true);
-		new Nissan("350Z", "red", 2, true);
-		new Toyota("Supra", "black", 2, true);
 
 		System.out.println(Nissan.inventory);
-		System.out.println("There are: " + Nissan.inventory +
+		System.out.println("Nissan Inventory: " + Nissan.inventory +
 				" Nissan ");
+		System.out.println("");
+		
 		
 		System.out.println(Honda.inventory);
-		System.out.println("There are: " + Honda.inventory +
-				" Honda");
+		System.out.println("Honda Inventory: " + Honda.inventory +
+				" Honda " + Honda.model);
+		System.out.println("");
 		
 		System.out.println(Honda.inventory);
-		System.out.println("There are: " + Toyota.inventory +
-				" Toyota");
+		System.out.println("Toyota Inventory: " + Toyota.inventory +
+				" Toyota " + Toyota.model);
+		System.out.println("");
 	}
+
 	
 }

@@ -3,11 +3,24 @@ package JapaneseCars;
 public abstract class JapaneseVehicles {
 	
 	//Fields
-	private static String model;
+	protected static String model;
 	private String color;
 	private boolean fourWheels;
 	private int doors;
 	private Object motorcyle;
+	void bodyType() {
+		if (doors > 2) {
+			System.out.println("sedan");
+		} else {
+			System.out.println("coupe");;
+		}
+	}
+	String bike() {
+		if (fourWheels != true) {
+			return "2 wheels";
+		}
+		return "Motorcyle";
+	}
 	
 	
 	//Constructor from fields
@@ -17,6 +30,7 @@ public abstract class JapaneseVehicles {
 		this.color = color;
 		this.doors = doors;
 		this.fourWheels = fourWheels;	
+		
 	}
 	
 	
@@ -28,12 +42,6 @@ public abstract class JapaneseVehicles {
 		System.out.println(this.model + " is convertible");
 	}
 	
-	public String bike() {
-		if (fourWheels != true) {
-			return "2 wheels";
-		}
-		return "This is a bike";
-	}
 	
 	//Getters and setters
 	public static String getModel() {

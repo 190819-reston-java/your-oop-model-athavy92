@@ -2,7 +2,7 @@ package JapaneseCars;
 
 public class Nissan extends JapaneseVehicles implements StartCar {
 	
-	public static String make = "Nissan";
+	private static String make = "Nissan";
 	public static int inventory = 0;
 
 	public Nissan(String model, String color, int doors, boolean fourWheels) {

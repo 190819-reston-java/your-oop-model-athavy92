@@ -1,9 +1,24 @@
 package JapaneseCars;
 
-public class JapaneseCars {
+public abstract class JapaneseCars {
 
-	public JapaneseCars() {
-		// TODO Auto-generated constructor stub
+	private String name;
+	private String color;
+	private int doors;
+	private int cylinders;
+	
+		
+
+	public JapaneseCars(String name, String color) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.doors = doors;
+		this.cylinders = cylinders;
+		
+		
 	}
-
+	
+	
 }
+

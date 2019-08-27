@@ -1,22 +1,22 @@
 package JapaneseCars;
 
-import java.io.Serializable;
-
-public class Nissan extends JapaneseVehicles implements Serializable, StartCar {
+public class Nissan extends JapaneseVehicles implements StartCar {
+	
+	public static String make = "Nissan";
+	public static int inventory = 0;
 
 	public Nissan(String model, String color, int doors, boolean fourWheels) {
 		super(model, color, doors, fourWheels);
-		// TODO Auto-generated constructor stub
+		inventory++;
 	}
+	
 
+	//Methods
 	public void start() {
-		// TODO Auto-generated method stub
-
+		System.out.println(JapaneseVehicles.getModel() + " has started ignition");
 	}
-
 	public void stop() {
-		// TODO Auto-generated method stub
-
+		System.out.println(JapaneseVehicles.getModel() + " has turned off");
 	}
 
 }

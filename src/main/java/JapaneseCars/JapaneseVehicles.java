@@ -1,7 +1,5 @@
 package JapaneseCars;
 
-import java.io.Serializable;
-
 public abstract class JapaneseVehicles {
 	
 	//Fields
@@ -41,6 +39,7 @@ public abstract class JapaneseVehicles {
 	public static String getModel() {
 		return model;
 	}
+	
 
 
 	public void setModel(String model) {

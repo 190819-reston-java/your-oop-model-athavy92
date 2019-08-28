@@ -4,8 +4,10 @@ package JapaneseCars;
 public class Nissan extends JapaneseVehicles implements StartCar {
 	
 	private static String make = "Nissan";
-	
 	protected static int nissanCount = 0;
+	static String getModel(String model) {
+		return model;
+	}
 	
 	public Nissan(String model, String color, int doors) {
 		super(model, color, doors);
@@ -14,9 +16,7 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 		nissanCount++;
 	}
 	
-	static String getModel(String model) {
-		return model;
-	}
+	
 
 	public static void nissanInventory() {
 		System.out.println("There are " + nissanCount + " Nissan(s) on hand");

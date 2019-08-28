@@ -7,11 +7,11 @@ public abstract class JapaneseVehicles {
 	private String color;
 	private int doors;
 	
-	void bodyType() {
+	String bodyType() {
 		if (doors > 2) {
-			System.out.println("sedan");
+			return "sedan";
 		} else {
-			System.out.println("coupe");;
+			return "coupe";
 		}
 	}
 

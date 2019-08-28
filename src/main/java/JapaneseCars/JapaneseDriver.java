@@ -23,11 +23,6 @@ public class JapaneseDriver {
 		System.out.println("");
 	}
 
-	private static Nissan Nissan(String string, String string2, int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 
 
 	

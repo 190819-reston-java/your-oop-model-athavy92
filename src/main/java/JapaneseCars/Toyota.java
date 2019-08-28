@@ -6,7 +6,9 @@ public class Toyota extends JapaneseVehicles implements StartCar {
 	public static String make = "Toyota";
 	
 	public static int toyotaCount = 0;
-	
+	static String getModel(String model) {
+		return model;
+	}
 	public Toyota(String model, String color, int doors) {
 		super(model, color, doors);
 		Toyota.getModel(model);
@@ -14,9 +16,7 @@ public class Toyota extends JapaneseVehicles implements StartCar {
 		toyotaCount++;
 	}
 
-	private static String getModel(String model) {
-		return model;
-	}
+	
 
 
 	public void start() {

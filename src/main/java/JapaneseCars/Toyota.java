@@ -18,11 +18,17 @@ public class Toyota extends JapaneseVehicles implements StartCar {
 		return model;
 	}
 
+
 	public void start() {
 		System.out.println(Toyota.getModel(model) + " has started ignition");
 	}
 	public void stop() {
 		System.out.println(Toyota.getModel(model) + " has turned off");
+	}
+	
+	@Override
+	public void keyless() {
+		System.out.println("This car has keyless entry");
 	}
 
 

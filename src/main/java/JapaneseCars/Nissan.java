@@ -21,13 +21,21 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 	public static void nissanInventory() {
 		System.out.println("There are " + nissanCount + " Nissan(s) on hand");
 	}
-
+	
 	//Methods
 	public void start() {
 		System.out.println(Nissan.getModel(model) + " has started ignition");
 	}
 	public void stop() {
 		System.out.println(Nissan.getModel(model) + " has turned off");
+	}
+	
+	@Override
+	public void keyless() {
+		System.out.println("This car has keyless entry");
+	}
+	public void convertible() {
+		System.out.println("This car is convertible");
 	}
 
 	//public static String getMake() {

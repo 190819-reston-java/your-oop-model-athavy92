@@ -2,10 +2,10 @@ package JapaneseCars;
 
 public interface StartCar {
 	
-	public void start();
+	abstract void start();
 	
 	
-	public void stop();
+	abstract void stop();
 	
 	
 

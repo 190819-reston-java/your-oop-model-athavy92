@@ -6,6 +6,11 @@ public class JapaneseDriver {
 		
 		Nissan nissan1 = new Nissan("350z", "black", 2);
 		Nissan nissan2 = new Nissan("370z", "white", 2);
+		//Honda civic1 = new Honda("Civic", "white", 2);
+		
+		System.out.println(nissan1);
+		System.out.println(nissan2);
+		//System.out.println(civic1);
 		
 		System.out.println(Nissan.inventory);
 		System.out.println("Nissan Inventory: " + Nissan.inventory +" "+ Nissan.getMake() + " "+ Nissan.getModel());

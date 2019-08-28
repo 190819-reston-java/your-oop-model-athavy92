@@ -5,7 +5,7 @@ package JapaneseCars;
 public abstract class JapaneseVehicles {
 	
 	//Fields
-	static String model;
+	protected static String model;
 	private String color;
 	private int doors;
 	void bodyType() {
@@ -40,7 +40,7 @@ public abstract class JapaneseVehicles {
 		return model;
 	}
 	public void setModel(String model) {
-		this.model = model;
+		JapaneseVehicles.model = model;
 	}
 	public String getColor() {
 		return color;
@@ -60,10 +60,6 @@ public abstract class JapaneseVehicles {
 	public String toString() {
 		return "JapaneseVehicles [model=" + model + ", color=" + color + ", doors=" + doors + "]";
 	}
-
-	
-
-	
 	
 	
 	

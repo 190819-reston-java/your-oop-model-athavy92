@@ -2,11 +2,13 @@ package JapaneseCars;
 
 public class Nissan extends JapaneseVehicles implements StartCar {
 	
-	private static String make = "Nissan";
+	public static String make = "Nissan";
 	public static int inventory = 0;
 	
 	public Nissan(String model, String color, int doors) {
 		super(model, color, doors);
+		Nissan.getModel(model);
+		this.getDoors();
 		inventory++;
 	}
 	
@@ -25,6 +27,9 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 	}
 	public static void setMake(String make) {
 		Nissan.make = make;
+	}
+	public static String getModel(String model) {
+		return model;
 	}
 
 }

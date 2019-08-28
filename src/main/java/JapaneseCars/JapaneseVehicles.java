@@ -3,11 +3,9 @@ package JapaneseCars;
 public abstract class JapaneseVehicles {
 	
 	//Fields
-	protected static String model;
+	static String model;
 	private String color;
-	private boolean fourWheels;
 	private int doors;
-	private Object motorcyle;
 	void bodyType() {
 		if (doors > 2) {
 			System.out.println("sedan");
@@ -15,22 +13,14 @@ public abstract class JapaneseVehicles {
 			System.out.println("coupe");;
 		}
 	}
-	String bike() {
-		if (fourWheels != true) {
-			return "2 wheels";
-		}
-		return "Motorcyle";
-	}
-	
+
 	
 	//Constructor from fields
-	public JapaneseVehicles(String model, String color, int doors, boolean fourWheels) {
+	public JapaneseVehicles(String model, String color, int doors) {
 		super();
 		this.model = model;
 		this.color = color;
-		this.doors = doors;
-		this.fourWheels = fourWheels;	
-		
+		this.doors = doors;		
 	}
 	
 	
@@ -47,54 +37,27 @@ public abstract class JapaneseVehicles {
 	public static String getModel() {
 		return model;
 	}
-	
-
-
 	public void setModel(String model) {
 		this.model = model;
 	}
-
-
 	public String getColor() {
 		return color;
 	}
-
-
 	public void setColor(String color) {
 		this.color = color;
 	}
-
-
 	public int getDoors() {
 		return doors;
 	}
-
-
 	public void setDoors(int doors) {
 		this.doors = doors;
 	}
 
-
-	public boolean isFourWheels() {
-		return fourWheels;
-	}
-
-
-	public void setFourWheels(boolean fourWheels) {
-		this.fourWheels = fourWheels;
-	}
-
-
-
 	
 	@Override
 	public String toString() {
-		return "JapaneseVehicles [model=" + model + ", color=" + color + ", doors=" + doors + ", fourWheels="
-				+ fourWheels + "]";
+		return "JapaneseVehicles [model=" + model + ", color=" + color + ", doors=" + doors + "]";
 	}
-
-	
-	
 
 	
 

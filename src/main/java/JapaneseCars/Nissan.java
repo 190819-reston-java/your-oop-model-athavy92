@@ -5,8 +5,8 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 	private static String make = "Nissan";
 	public static int inventory = 0;
 
-	public Nissan(String model, String color, int doors, boolean fourWheels) {
-		super(model, color, doors, fourWheels);
+	public Nissan(String model, String color, int doors) {
+		super(model, color, doors);
 		inventory++;
 	}
 	

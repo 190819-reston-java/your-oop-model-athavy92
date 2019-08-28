@@ -5,8 +5,8 @@ public class Honda extends JapaneseVehicles implements StartCar {
 	private static String make = "Honda";
 	public static int inventory = 0;
 
-	public Honda(String model, String color, int doors, boolean fourWheels) {
-		super(model, color, doors, fourWheels);
+	public Honda(String model, String color, int doors) {
+		super(model, color, doors);
 		inventory++;
 	}
 	
@@ -16,7 +16,7 @@ public class Honda extends JapaneseVehicles implements StartCar {
 		if (inventory == 0) {
 			System.out.println("No inventory available");
 		} else {
-			System.out.println("There are: " + inventory + " Honda " + model);
+			System.out.println("There are: " + inventory + " Honda ");
 		}
 	}
 	

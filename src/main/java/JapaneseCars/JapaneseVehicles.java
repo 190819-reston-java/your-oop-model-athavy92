@@ -3,9 +3,10 @@ package JapaneseCars;
 public abstract class JapaneseVehicles {
 	
 	//Fields
-	private static String model;
+	protected String model;
 	private String color;
 	private int doors;
+	
 	void bodyType() {
 		if (doors > 2) {
 			System.out.println("sedan");
@@ -16,6 +17,7 @@ public abstract class JapaneseVehicles {
 
 	
 	//Constructor from fields
+	
 	public JapaneseVehicles(String model, String color, int doors) {
 		super();
 		this.model = model;
@@ -44,12 +46,12 @@ public abstract class JapaneseVehicles {
 	
 	
 	//Getters and setters
-	public static String getModel() {
-		return model;
-	}
-	public void setModel(String model) {
-		this.model = model;
-	}
+	//public static String getModel() {
+	//	return model;
+	//}
+	//public void setModel(String model) {
+	//	this.model = model;
+	//}
 	public String getColor() {
 		return color;
 	}
@@ -66,7 +68,10 @@ public abstract class JapaneseVehicles {
 	
 	@Override
 	public String toString() {
-		return "JapaneseVehicles [model=" + model + ", color=" + color + ", doors=" + doors + "]";
+		return "JapaneseVehicles "
+				+ "[model=" + model + ", "
+				+ "color=" + color + ", "
+						+ "doors=" + doors + "]";
 	}
 	
 	

@@ -3,30 +3,36 @@ package JapaneseCars;
 public class Honda extends JapaneseVehicles implements StartCar {
 	
 	private static String make = "Honda";
-	public static int inventory = 0;
+	protected static int hondaCount = 0;
 
 	public Honda(String model, String color, int doors) {
 		super(model, color, doors);
-		inventory++;
+		Honda.getModel(model);
+		hondaCount++;
 	}
 	
 	
+	private static String getModel(String model) {
+		return model;
+	}
+
+
 	//Inventory count
 	public void hondaInventory() {
-		if (inventory == 0) {
+		if (hondaCount == 0) {
 			System.out.println("No inventory available");
 		} else {
-			System.out.println("There are: " + inventory + " Honda ");
+			System.out.println("There are: " + hondaCount + " Honda ");
 		}
 	}
 	
 
 	//Methods
 	public void start() {
-		System.out.println(this.getModel() + " has started ignition");
+		System.out.println(Honda.getModel(model) + " has started ignition");
 	}
 	public void stop() {
-		System.out.println(this.getModel() + " has turned off");
+		System.out.println(Honda.getModel(model) + " has turned off");
 	}
 
 }

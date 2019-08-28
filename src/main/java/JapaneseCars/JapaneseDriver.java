@@ -4,27 +4,31 @@ public class JapaneseDriver {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Nissan.inventory);
-		String model = "";
-		System.out.println("Nissan Inventory: " + Nissan.inventory +" "+ Nissan.getMake() + " "+ Nissan.getModel(model));
-		System.out.println("");
+		Nissan nissan1 = new Nissan("350z", "black", 2);
 		
 		
-		System.out.println(Honda.inventory);
-		System.out.println("Honda Inventory: " + Honda.inventory +
+		System.out.println(Nissan.nissanCount);
+		System.out.println("Nissan Inventory: " + Nissan.nissanCount + " Nissan ");
+		System.out.println(""); 
+		
+		
+		System.out.println(Honda.hondaCount);
+		System.out.println("Honda Inventory: " + Honda.hondaCount +
 				" Honda ");
 		System.out.println("");
 		
-		System.out.println(Honda.inventory);
-		System.out.println("Toyota Inventory: " + Toyota.inventory +
+		System.out.println(Toyota.toyotaCount);
+		System.out.println("Toyota Inventory: " + Toyota.toyotaCount +
 				" Toyota ");
 		System.out.println("");
 	}
 
-	private static Honda Honda(String string, String string2, int i, boolean b) {
+	private static Nissan Nissan(String string, String string2, int i) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
 
 	
 }

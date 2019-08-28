@@ -4,7 +4,7 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 	
 	private static String make = "Nissan";
 	public static int inventory = 0;
-
+	
 	public Nissan(String model, String color, int doors) {
 		super(model, color, doors);
 		inventory++;
@@ -13,10 +13,18 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 
 	//Methods
 	public void start() {
-		System.out.println(JapaneseVehicles.getModel() + " has started ignition");
+		System.out.println(Nissan.getModel() + " has started ignition");
 	}
 	public void stop() {
-		System.out.println(JapaneseVehicles.getModel() + " has turned off");
+		System.out.println(Nissan.getModel() + " has turned off");
+	}
+
+
+	public static String getMake() {
+		return make;
+	}
+	public static void setMake(String make) {
+		Nissan.make = make;
 	}
 
 }

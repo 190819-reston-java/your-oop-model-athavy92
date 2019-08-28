@@ -1,5 +1,7 @@
 package JapaneseCars;
 
+
+
 public abstract class JapaneseVehicles {
 	
 	//Fields

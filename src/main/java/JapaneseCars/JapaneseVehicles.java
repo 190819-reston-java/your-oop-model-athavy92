@@ -1,11 +1,9 @@
 package JapaneseCars;
 
-
-
 public abstract class JapaneseVehicles {
 	
 	//Fields
-	protected static String model;
+	private static String model;
 	private String color;
 	private int doors;
 	void bodyType() {
@@ -25,13 +23,23 @@ public abstract class JapaneseVehicles {
 		this.doors = doors;		
 	}
 	
+	public JapaneseVehicles(String model, String color) {
+		this(model, color, 4);
+	}
+	public JapaneseVehicles(String model) {
+		this(model, "black");
+	}
+	public JapaneseVehicles() {
+		this("Car Name");
+	}
+	
 	
 	//methods
 	public void keyless() {
-		System.out.println(this.model + " has keyless start");
+		System.out.println(model + " has keyless start");
 	}
 	public void convertible() {
-		System.out.println(this.model + " is convertible");
+		System.out.println(model + " is convertible");
 	}
 	
 	
@@ -40,7 +48,7 @@ public abstract class JapaneseVehicles {
 		return model;
 	}
 	public void setModel(String model) {
-		JapaneseVehicles.model = model;
+		this.model = model;
 	}
 	public String getColor() {
 		return color;

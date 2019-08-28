@@ -15,10 +15,10 @@ public class Nissan extends JapaneseVehicles implements StartCar {
 
 	//Methods
 	public void start() {
-		System.out.println(Nissan.getModel() + " has started ignition");
+		System.out.println(Nissan.getModel(null) + " has started ignition");
 	}
 	public void stop() {
-		System.out.println(Nissan.getModel() + " has turned off");
+		System.out.println(Nissan.getModel(null) + " has turned off");
 	}
 
 
